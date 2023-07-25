@@ -9,7 +9,14 @@
     <!-- google lato fonts 400,700,900-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Manrope:wght@500;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Tailwind and Daisy UI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -18,26 +25,103 @@
     <!-- custom tailwind -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
-      <style>
-        .font-lato{
+    <style>
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
-      </style>
+
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+
+        }
+    </style>
 
 
 </head>
 
 <body>
+    <header>
+        <!-- nav section start from here -->
+        <nav class="max-w-screen-lg mx-auto lg:mt-8 md:mt-8 px-4">
+            <div class="navbar justify-center md:justify-around lg:justify-between lg:bg-[#F85559] md:bg-[#F85559] rounded-full py-[15px] px-[28px]">
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-manrope font-medium text-white">Home</a></li>
+                        <li><a class="font-manrope font-medium text-white">About Us</a></li>
+                        <li><a class="font-manrope font-medium text-white">Shop</a></li>
+                        <li><a class="font-manrope font-medium text-white">All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-start w-auto">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="font-manrope font-medium text-white">Home</a></li>
+                            <li><a class="font-manrope font-medium text-white">About Us</a></li>
+                            <li><a class="font-manrope font-medium text-white">Shop</a></li>
+                            <li><a class="font-manrope font-medium text-white">All Fruits</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-[10px]">
+                        <div>
+                            <img class="w-[40px]" src="./images/logo.png" alt="">
+                        </div>
+                        <div>
+                            <a class=" normal-case text-2xl font-lato font-extrabold lg:text-white md:text-white">Fruit Burst</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="navbar-end w-auto md:block hidden lg:block">
+                   <div>
+                    <button class=" py-[9px] px-[18px] bg-white border-none rounded-full w-[300px]">
+                        <div class="flex items-center">
+                            <div class="flex-1">
+                                <h3 class="flex justify-start">Search Here</h3>
+                            </div>
+                            <div class="flex justify-end">
+                                <i class="flex fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+
+
+
+
+        </nav>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 
